@@ -33,19 +33,35 @@ let objA = {
   prop2: "teste2",
 };
 
-console.log(objA)
+console.log(objA);
 /** resultado antes da herança:
  * {prop1: 'teste', prop2: 'teste2'}
  */
 
 let objB = {
-    prop3: 'teste3'
-}
+  prop3: "teste3",
+};
 
 //objA herda objetos de objB
-Object.assign(objA, objB)
+Object.assign(objA, objB);
 
-console.log(objA)
+console.log(objA);
 /** resultado após herança:
  * {prop1: 'teste', prop2: 'teste2', prop3: 'teste3'}
+ */
+
+//-------------------------------------------------------------
+
+//transformando objeto em array e listando
+
+let objC = {
+  prop4: "teste4",
+  prop5: "teste5",
+};
+
+let objTransformadoEmArray = Object.keys(objC);
+
+console.log(objTransformadoEmArray);
+/** resultado após transformação:
+ *  ['prop4', 'prop5']
  */
